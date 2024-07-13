@@ -1,0 +1,25 @@
+
+meme_dict = {
+    "LOL": "una respuesta a algo gracioso",
+    "CRINGE": "algo raro o embarazoso",
+    "ROFL": "una respuesta a una broma",
+    "SHEESH": "ligera desaprobación",
+    "CREEPY": "aterrador, siniestro",
+    "AGGRO": "ponerse agresivo/enojado",
+}
+
+
+print("¡Bienvenido al Diccionario de Memes!")
+print("Escribe una palabra que no entiendas (¡con mayúsculas!).")
+print("Puedes consultar hasta 5 palabras.\n")
+
+
+for i in range(5):
+    word = input("Palabra {}: ".format(i + 1))
+    if word in meme_dict:
+        print("{}: {}".format(word, meme_dict[word]))
+    else:
+        print("Lo siento, no tenemos la definición de '{}'.".format(word))
+    print() 
+
+print("¡Gracias por usar el Diccionario de Memes!")
